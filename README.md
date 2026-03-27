@@ -1,6 +1,6 @@
-# YouTube Edu-Analytics: A Full-Stack Machine Learning Pipeline
+# 📺 YouTube Edu-Analytics: A Full-Stack Machine Learning Pipeline
 
-##  Project Overview
+## 🚀 Project Overview
 This project implements a complete end-to-end Data Science pipeline designed to discover, extract, and categorize educational YouTube channels. Using a data-driven approach, we analyze high-volume metadata to predict a channel's growth category through various Machine Learning classifiers.
 
 ## 📊 Big Data Scale & Robustness
@@ -10,7 +10,12 @@ The models are trained on a high-density dataset, ensuring statistically signifi
 * **Domains Analyzed**: 90 distinct academic and technical niches.
 * **Statistical Depth**: The massive volume of data allowed for precise **Inflection Point Analysis**, making the "separation zones" between growth categories mathematically distinct and clear.
 
-## Pipeline Architecture
+### Channel Distribution by Log(Subscribers)
+Below is the distribution curve showing the inflection points that defined our 6 data-driven categories.
+
+![Subscriber Distribution](Images/subscriber_distribution.png)
+
+## 🛠️ Pipeline Architecture
 The project is structured into four specialized notebooks:
 1. **`01_Automated_Channel_Discovery.ipynb`**: Automated discovery of channel IDs across 90 educational domains using the YouTube API.
 2. **`02_High_Throughput_Video_Extraction.ipynb`**: Mass extraction of video metadata using **Python ThreadPoolExecutor** for high-speed parallel processing.
@@ -30,7 +35,10 @@ The models were tasked with classifying channels into 6 growth stages. The **Ran
 | **Logistic Regression** | 0.7594 | 0.7735 |
 | **K-Nearest Neighbors** | 0.7185 | 0.7393 |
 
-*(Note: Data based on final project evaluation)*
+### Confusion Matrix (Random Forest)
+Our best-performing model (Random Forest, 78.72%) shows high precision in identifying established channel categories, which is vital for targeting content creators with significant influence.
+
+![Confusion Matrix - Random Forest](Images/confusion_matrix_rf.png)
 
 ## 💡 Key Findings
 * **Feature Importance**: Metrics like "Publishing Regularity" and "Engagement-per-video" are superior predictors of a channel's category compared to simple total upload counts.
