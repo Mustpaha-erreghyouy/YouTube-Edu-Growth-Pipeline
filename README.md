@@ -1,6 +1,6 @@
-# 📺 YouTube Edu-Analytics: A Full-Stack Machine Learning Pipeline
+# YouTube Edu-Analytics: A Full-Stack Machine Learning Pipeline
 
-## 🚀 Project Overview
+##  Project Overview
 This project implements a complete end-to-end Data Science pipeline designed to discover, extract, and categorize educational YouTube channels. Using a data-driven approach, we analyze high-volume metadata to predict a channel's growth category through various Machine Learning classifiers.
 
 ## 📊 Big Data Scale & Robustness
@@ -10,7 +10,7 @@ The models are trained on a high-density dataset, ensuring statistically signifi
 * **Domains Analyzed**: 90 distinct academic and technical niches.
 * **Statistical Depth**: The massive volume of data allowed for precise **Inflection Point Analysis**, making the "separation zones" between growth categories mathematically distinct and clear.
 
-## 🛠️ Pipeline Architecture
+## Pipeline Architecture
 The project is structured into four specialized notebooks:
 1. **`01_Automated_Channel_Discovery.ipynb`**: Automated discovery of channel IDs across 90 educational domains using the YouTube API.
 2. **`02_High_Throughput_Video_Extraction.ipynb`**: Mass extraction of video metadata using **Python ThreadPoolExecutor** for high-speed parallel processing.
