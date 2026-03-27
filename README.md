@@ -39,6 +39,14 @@ The models were tasked with classifying channels into 6 growth stages. The **Ran
 Our best-performing model (Random Forest, 78.72%) shows high precision in identifying established channel categories, which is vital for targeting content creators with significant influence.
 
 ![Confusion Matrix - Random Forest](Images/confusion_matrix_rf.png)
+## 📈 Model Optimization & Experiments
+To find the best performing parameters for each algorithm, multiple experiments were run. The plot below illustrates the evolution of Cross-Validation scores (dotted lines) versus Test Accuracy (solid lines) during the hyperparameter tuning phase for all four models.
+
+![Model Optimization Trials](Images/Model_Optimization.png)
+
+> **Key Takeaway**: We can observe consistent and strong performances from **Random Forest** (light blue line) and **SVC** (orange line) across most trials. The tight relationship between their validation (dotted) and test (solid) scores demonstrates robust generalization.
+
+---
 
 ## 💡 Key Findings
 * **Feature Importance**: Metrics like "Publishing Regularity" and "Engagement-per-video" are superior predictors of a channel's category compared to simple total upload counts.
