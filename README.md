@@ -22,7 +22,7 @@ The project is structured into four specialized notebooks:
 3. **`03_Data_Wrangling_and_Feature_Engineering.ipynb`**: 
     * Processing and cleaning of 490k records.
     * **Feature Engineering**: Calculating publishing regularity (CV), engagement metrics, and channel age.
-    * **Statistical Binning**: Defining 6 growth classes based on logarithmic inflection points (Bins: 0, 100, 2k, 17k, 160k, 1.2M).
+    * **Statistical Binning**: Defining 6 growth classes based on logarithmic inflection points (Bins: 0, 1000, 1k, 20k, 200k, 2M,+2M).
 4. **`04_Predictive_Modeling_and_Classification.ipynb`**: Comparative evaluation of multiple classifiers including SVC, Random Forest, KNN, and Logistic Regression.
 
 ## 🏆 Model Performance
